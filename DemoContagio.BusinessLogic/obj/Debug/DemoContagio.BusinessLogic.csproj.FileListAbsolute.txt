@@ -1,0 +1,12 @@
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\bin\Debug\DemoContagio.BusinessLogic.dll
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\bin\Debug\DemoContagio.BusinessLogic.pdb
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\bin\Debug\DemoContagio.DataAccess.dll
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\bin\Debug\DemoContagio.Entities.dll
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\bin\Debug\DemoContagio.DataAccess.pdb
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\bin\Debug\DemoContagio.DataAccess.dll.config
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\bin\Debug\DemoContagio.Entities.pdb
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\obj\Debug\DemoContagio.BusinessLogic.csproj.AssemblyReference.cache
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\obj\Debug\DemoContagio.BusinessLogic.csproj.CoreCompileInputs.cache
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\obj\Debug\DemoContagio.BusinessLogic.csproj.CopyComplete
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\obj\Debug\DemoContagio.BusinessLogic.dll
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.BusinessLogic\obj\Debug\DemoContagio.BusinessLogic.pdb

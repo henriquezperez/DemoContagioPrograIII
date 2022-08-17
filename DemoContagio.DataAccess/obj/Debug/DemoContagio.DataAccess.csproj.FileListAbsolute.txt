@@ -1,0 +1,10 @@
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\bin\Debug\DemoContagio.DataAccess.dll.config
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\bin\Debug\DemoContagio.DataAccess.dll
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\bin\Debug\DemoContagio.DataAccess.pdb
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\bin\Debug\DemoContagio.Entities.dll
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\bin\Debug\DemoContagio.Entities.pdb
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\obj\Debug\DemoContagio.DataAccess.csproj.AssemblyReference.cache
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\obj\Debug\DemoContagio.DataAccess.csproj.CoreCompileInputs.cache
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\obj\Debug\DemoContagio.DataAccess.csproj.CopyComplete
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\obj\Debug\DemoContagio.DataAccess.dll
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.DataAccess\obj\Debug\DemoContagio.DataAccess.pdb

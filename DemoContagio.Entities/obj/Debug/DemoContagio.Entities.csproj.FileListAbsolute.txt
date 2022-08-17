@@ -1,0 +1,6 @@
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.Entities\bin\Debug\DemoContagio.Entities.dll
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.Entities\bin\Debug\DemoContagio.Entities.pdb
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.Entities\obj\Debug\DemoContagio.Entities.csproj.AssemblyReference.cache
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.Entities\obj\Debug\DemoContagio.Entities.csproj.CoreCompileInputs.cache
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.Entities\obj\Debug\DemoContagio.Entities.dll
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.Entities\obj\Debug\DemoContagio.Entities.pdb
