@@ -50,24 +50,30 @@ namespace DemoContagio.DataAccess
                         }
                     }
                 }
-            } // Close y dispose
-
+            }
             return result;
-        } //Cierra metodo SelectAll
+        }
 
         public bool Insert(Ciclo entity)
         {
             bool result = false;
-            using (SqlConnection conn = new SqlConnection(_cadena))
+            try
             {
-                using (SqlCommand cmd = new SqlCommand("spCicloInsert", conn))
+                using (SqlConnection conn = new SqlConnection(_cadena))
                 {
-                    cmd.Parameters.AddWithValue("@Nombre", entity.Nombre);
-                    cmd.Parameters.AddWithValue("@Anio", entity.Anio);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    conn.Open();
-                    result = cmd.ExecuteNonQuery() > 0;
+                    using (SqlCommand cmd = new SqlCommand("sp_CicloInsert", conn))
+                    {               
+                        cmd.Parameters.AddWithValue("@Nombre", entity.Nombre);
+                        cmd.Parameters.AddWithValue("@Anio", entity.Anio);
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        conn.Open();
+                        result = cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch(SqlException)
+            {
+                result = false;
             }
             return result;
         }

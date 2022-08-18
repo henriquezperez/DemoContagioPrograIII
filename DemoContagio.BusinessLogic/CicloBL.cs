@@ -18,10 +18,10 @@ namespace DemoContagio.BusinessLogic
             {
                 if (_instace == null)
                     _instace = new CicloBL();
-
                 return _instace;
             }
         }
+
         public List<Ciclo> SelectAll()
         {
             List<Ciclo> result = null;
@@ -31,13 +31,10 @@ namespace DemoContagio.BusinessLogic
             }
             catch (Exception)
             {
-
                 throw;
             }
-
             return result;
         }
-
 
         public bool Insert(Ciclo entity)
         {
@@ -48,10 +45,8 @@ namespace DemoContagio.BusinessLogic
             }
             catch (Exception)
             {
-
                 throw;
             }
-
             return result;
         }
     }

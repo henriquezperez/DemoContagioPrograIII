@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsignatura.Designer.cs">
+      <DependentUpon>frmAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAula.Designer.cs">
+      <DependentUpon>frmAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarrera.Designer.cs">
+      <DependentUpon>frmCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCiclo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCiclo.Designer.cs">
+      <DependentUpon>frmCiclo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacultad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacultad.Designer.cs">
+      <DependentUpon>frmFacultad.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +84,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAsignatura.resx">
+      <DependentUpon>frmAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAula.resx">
+      <DependentUpon>frmAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarrera.resx">
+      <DependentUpon>frmCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCiclo.resx">
+      <DependentUpon>frmCiclo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacultad.resx">
+      <DependentUpon>frmFacultad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +110,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,6 +134,48 @@
       <Project>{57f36e16-f6c1-40a8-a2c6-228ce937adf8}</Project>
       <Name>DemoContagio.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\educacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64pxeducacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40pxçeducacion - copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40pxgraduado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blancoUpdate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40pxpizarra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40PXsombrero-de-graduacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40PXcalendar_icon_129357.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_icon_129357.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\educacion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizarra %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sombrero-de-graduacion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,8 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsignaturaDAL.cs" />
+    <Compile Include="AulaDAL.cs" />
+    <Compile Include="CarreraDAL.cs" />
     <Compile Include="CicloDAL.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="FacultadDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

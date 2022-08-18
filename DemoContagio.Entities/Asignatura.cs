@@ -12,7 +12,7 @@ namespace DemoContagio.Entities
         public string Nombre { get; set; }
         public string Codigo { get; set; }
         public int AulaId { get; set; }
-        public string CicloId { get; set; }
+        public int CicloId { get; set; }
         public int FacultadId { get; set; }
     }
 }
