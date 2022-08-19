@@ -60,7 +60,7 @@ namespace DemoContagio.DataAccess
             {
                 using (SqlConnection conn = new SqlConnection(_cadena))
                 {
-                    using (SqlCommand cmd = new SqlCommand("sp_FcultadInsert", conn))
+                    using (SqlCommand cmd = new SqlCommand("sp_FacultadInsert", conn))
                     {
                         cmd.Parameters.AddWithValue("@Nombre", entity.Nombre);
                         cmd.CommandType = CommandType.StoredProcedure;

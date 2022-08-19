@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace DemoContagio.DataAccess
 {
@@ -62,7 +63,8 @@ namespace DemoContagio.DataAccess
                 using (SqlConnection conn = new SqlConnection(_cadena))
                 {
                     using (SqlCommand cmd = new SqlCommand("sp_CicloInsert", conn))
-                    {               
+                    {
+                        //cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@Nombre", entity.Nombre);
                         cmd.Parameters.AddWithValue("@Anio", entity.Anio);
                         cmd.CommandType = CommandType.StoredProcedure;

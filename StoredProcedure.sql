@@ -13,8 +13,7 @@ create proc sp_CicloInsert
 	@Anio varchar (4)
 as 
 begin
-	insert into Ciclo(Nombre) values (@Nombre)
-	insert into Ciclo(Anio) values (@Anio)
+	insert into Ciclo(Nombre, Anio) values (@Nombre, @Anio)
 end
 go
 
@@ -30,8 +29,7 @@ create proc sp_CarreraInsert
 	@FacultadId int
 as 
 begin
-	insert into Carrera(Nombre) values (@Nombre)
-	insert into Carrera(FacultadId) values (@FacultadId)
+	insert into Carrera(Nombre, FacultadId) values (@Nombre, @FacultadId)
 end
 go
 
@@ -65,11 +63,7 @@ CREATE PROC sp_AsignaturaInsert
 	@FacultadId int
 AS 
 BEGIN
-	INSERT INTO Asignatura(Nombre) VALUES (@Nombre)
-	INSERT INTO Asignatura(Codigo) VALUES (@Codigo)
-	INSERT INTO Asignatura(AulaId) VALUES (@AulaId)
-	INSERT INTO Asignatura(CicloId) VALUES (@CicloId)
-	INSERT INTO Asignatura(FacultadId) VALUES (@FacultadId)
+	INSERT INTO Asignatura(Nombre, Codigo, AulaId, CicloId, FacultadId) VALUES (@Nombre, @Codigo, @AulaId, @CicloId, @FacultadId)
 END
 GO
 

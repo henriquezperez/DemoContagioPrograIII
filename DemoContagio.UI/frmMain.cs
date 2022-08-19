@@ -14,7 +14,18 @@ namespace DemoContagio.UI
 {
     public partial class frmMain : Form
     {
-        List<Ciclo> _list = new List<Ciclo>();
+       /* private static Form _instace;
+
+        public static Form Instance
+        {
+            get
+            {
+                if (_instace == null)
+                    _instace = new Form();
+                return _instace;
+            }
+        }*/
+
         public frmMain()
         {
             InitializeComponent();
@@ -22,38 +33,57 @@ namespace DemoContagio.UI
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            _list = CicloBL.Instance.SelectAll().ToList();
-           // dataGridView1.DataSource = _list;
+          
         }
 
         private void btnCiclo_Click(object sender, EventArgs e)
         {
-            frmCiclo fn = new frmCiclo();
-            fn.ShowDialog();
+            frmCiclo frm = new frmCiclo();
+           // _instace = frm;
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void btnAsignatura_Click(object sender, EventArgs e)
         {
-            frmAsignatura asg = new frmAsignatura();
-            asg.ShowDialog();
+            frmAsignatura frm = new frmAsignatura();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void btnCarreras_Click(object sender, EventArgs e)
         {
-            frmCarrera carr = new frmCarrera();
-            carr.ShowDialog();
+            frmCarrera frm = new frmCarrera();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void btnAula_Click(object sender, EventArgs e)
         {
-            frmAula aul = new frmAula();
-            aul.ShowDialog();
+            frmAula frm = new frmAula();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void btnFacultad_Click(object sender, EventArgs e)
         {
-            frmFacultad fa = new frmFacultad();
-            fa.ShowDialog();
+            frmFacultad frm = new frmFacultad();
+            frm.MdiParent = this;
+            frm.Show();
         }
+
+       /* private void Windows(EventArgs e, int x)
+        {
+            if(e.Equals(btnCiclo.Click() == true), x == 1)
+            {
+                frmCiclo frm = new frmCiclo();
+                _instace = frm;
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }*/
+
+       
     }
+
 }

@@ -61,6 +61,9 @@ namespace DemoContagio.UI
                 Nombre = textBoxNombre.Text.Trim()
             };
             AulaBL.Instance.Insert(entity);
+            ControlsDisable();
+            UpdateDataGrid();
+            MessageBox.Show("El registro se agrego correctamente", "Confirmacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

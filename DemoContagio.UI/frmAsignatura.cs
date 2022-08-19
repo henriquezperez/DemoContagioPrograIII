@@ -24,12 +24,32 @@ namespace DemoContagio.UI
         {
             ControlsDisable();
             UpdateDataGrid();
+            UpdateCombox();
         }
 
         private void UpdateDataGrid()
         {
             _list = AsignaturaBL.Instance.SelectAll();
             dataGridView1.DataSource = _list;
+        }
+
+        private void UpdateCombox()
+        {
+            List<Aula> _listAula = AulaBL.Instance.SelectAll();
+            comboBoxAula.DataSource = _listAula;
+            comboBoxAula.DisplayMember = "Nombre";
+            comboBoxAula.ValueMember = "AulaId";
+
+            List<Ciclo> _listCiclo = CicloBL.Instance.SelectAll();
+            comboBoxCiclo.DataSource = _listCiclo;
+            comboBoxCiclo.DisplayMember = "Nombre";
+            comboBoxCiclo.ValueMember = "CicloId";
+
+            List<Facultad> _listFac = FacultadBL.Instance.SelectAll();
+            comboBoxFacultad.DataSource = _listFac;
+            comboBoxFacultad.DisplayMember = "Nombre";
+            comboBoxFacultad.ValueMember = "FacultadId";
+
         }
 
         private void ControlsEnable()
@@ -75,13 +95,15 @@ namespace DemoContagio.UI
             Asignatura entity = new Asignatura()
             {
                 Nombre = textBoxNombre.Text.Trim(),
+                Codigo = textBoxCodigo.Text.Trim(),
                 AulaId = (int)comboBoxAula.SelectedValue,
                 AsignaturaId = (int)comboBoxFacultad.SelectedValue,
                 CicloId = (int)comboBoxCiclo.SelectedValue,
-                Codigo = textBoxCodigo.Text.Trim(),
                 FacultadId = (int)comboBoxFacultad.SelectedValue
             };
             AsignaturaBL.Instance.Insert(entity);
+            ControlsDisable();
+            UpdateDataGrid();
             MessageBox.Show("El registro se agrego correctamente", "Confirmacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -93,6 +115,7 @@ namespace DemoContagio.UI
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             UpdateDataGrid();
+            UpdateCombox();
         }
     }
 }

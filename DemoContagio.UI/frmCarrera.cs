@@ -24,12 +24,22 @@ namespace DemoContagio.UI
         {
             ControlsDisable();
             UpdateDataGrid();
+            UpdateCombox();
         }
 
         private void UpdateDataGrid()
         {
             _list = CarreraBL.Instance.SelectAll();
             dataGridView1.DataSource = _list;
+        }
+
+        private void UpdateCombox()
+        {
+            List<Facultad> _list;
+            _list = FacultadBL.Instance.SelectAll();
+            comboBoxFacultad.DataSource = _list;
+            comboBoxFacultad.DisplayMember = "Nombre";
+            comboBoxFacultad.ValueMember = "FacultadId";
         }
 
         private void ControlsEnable()
@@ -43,6 +53,7 @@ namespace DemoContagio.UI
 
         private void ControlsDisable()
         {
+            textBoxNombre.Enabled = false;
             textBoxNombre.Text = string.Empty;
             comboBoxFacultad.ValueMember = string.Empty;
             comboBoxFacultad.Enabled = false;
@@ -58,7 +69,14 @@ namespace DemoContagio.UI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            Carrera entity = new Carrera() { 
+                Nombre = textBoxNombre.Text.Trim(),
+                FacultadId = (int)comboBoxFacultad.SelectedValue
+            };
+            CarreraBL.Instance.Insert(entity);
+            ControlsDisable();
+            UpdateDataGrid();
+            MessageBox.Show("El registro se agrego correctamente", "Confirmacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -69,6 +87,7 @@ namespace DemoContagio.UI
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             UpdateDataGrid();
+            UpdateCombox();
         }
     }
 }

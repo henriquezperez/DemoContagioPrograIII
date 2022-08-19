@@ -73,8 +73,8 @@ namespace DemoContagio.UI
             {
                 Ciclo entity = new Ciclo()
                 {
-                    Nombre = textBoxName.Text,
-                    Anio = textBoxYear.Text
+                    Nombre = textBoxName.Text.Trim(),
+                    Anio = textBoxYear.Text.Trim()
                 };
                 CicloBL.Instance.Insert(entity);
                /* if(res != null)
