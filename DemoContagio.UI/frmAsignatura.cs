@@ -15,6 +15,21 @@ namespace DemoContagio.UI
     public partial class frmAsignatura : Form
     {
         //List<Asignatura> _list;
+
+        private static frmAsignatura _instance;
+        public static frmAsignatura Instance
+        {
+            get
+            {
+                if (_instance == null || _instance.IsDisposed == true)
+                {
+                    _instance = new frmAsignatura();
+                }
+                    
+                return _instance;
+            }
+        }
+
         public frmAsignatura()
         {
             InitializeComponent();

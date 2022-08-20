@@ -85,7 +85,6 @@ namespace DemoContagio.DataAccess
                         cmd.CommandType = CommandType.StoredProcedure;
                         conn.Open();
                         result = cmd.ExecuteNonQuery() > 0;
-
                     }
                 }
             }
@@ -95,6 +94,5 @@ namespace DemoContagio.DataAccess
             }
             return result;
         }
-
     }
 }

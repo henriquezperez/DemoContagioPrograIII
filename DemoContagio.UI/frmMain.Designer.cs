@@ -29,29 +29,37 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnEstudiantes = new System.Windows.Forms.Button();
             this.btnAsignatura = new System.Windows.Forms.Button();
             this.btnFacultad = new System.Windows.Forms.Button();
             this.btnCarreras = new System.Windows.Forms.Button();
             this.btnAula = new System.Windows.Forms.Button();
             this.btnCiclo = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnEstudiantes);
-            this.panel1.Controls.Add(this.btnAsignatura);
-            this.panel1.Controls.Add(this.btnFacultad);
             this.panel1.Controls.Add(this.btnCarreras);
             this.panel1.Controls.Add(this.btnAula);
+            this.panel1.Controls.Add(this.btnAsignatura);
             this.panel1.Controls.Add(this.btnCiclo);
+            this.panel1.Controls.Add(this.btnFacultad);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 561);
+            this.panel1.Size = new System.Drawing.Size(220, 561);
             this.panel1.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(220, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(764, 32);
+            this.panel2.TabIndex = 7;
             // 
             // btnEstudiantes
             // 
@@ -62,7 +70,7 @@
             this.btnEstudiantes.ForeColor = System.Drawing.Color.LightGray;
             this.btnEstudiantes.Image = global::DemoContagio.UI.Properties.Resources._40pxgraduado;
             this.btnEstudiantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstudiantes.Location = new System.Drawing.Point(22, 452);
+            this.btnEstudiantes.Location = new System.Drawing.Point(12, 468);
             this.btnEstudiantes.Name = "btnEstudiantes";
             this.btnEstudiantes.Size = new System.Drawing.Size(200, 50);
             this.btnEstudiantes.TabIndex = 5;
@@ -81,7 +89,7 @@
             this.btnAsignatura.ForeColor = System.Drawing.Color.LightGray;
             this.btnAsignatura.Image = global::DemoContagio.UI.Properties.Resources._40pxçeducacion___copia;
             this.btnAsignatura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsignatura.Location = new System.Drawing.Point(22, 113);
+            this.btnAsignatura.Location = new System.Drawing.Point(12, 129);
             this.btnAsignatura.Name = "btnAsignatura";
             this.btnAsignatura.Size = new System.Drawing.Size(200, 50);
             this.btnAsignatura.TabIndex = 2;
@@ -99,7 +107,7 @@
             this.btnFacultad.ForeColor = System.Drawing.Color.LightGray;
             this.btnFacultad.Image = global::DemoContagio.UI.Properties.Resources._40PXsombrero_de_graduacion;
             this.btnFacultad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacultad.Location = new System.Drawing.Point(22, 385);
+            this.btnFacultad.Location = new System.Drawing.Point(12, 401);
             this.btnFacultad.Name = "btnFacultad";
             this.btnFacultad.Size = new System.Drawing.Size(200, 50);
             this.btnFacultad.TabIndex = 4;
@@ -115,9 +123,9 @@
             this.btnCarreras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarreras.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarreras.ForeColor = System.Drawing.Color.LightGray;
-            this.btnCarreras.Image = global::DemoContagio.UI.Properties.Resources._40pxgraduado;
+            this.btnCarreras.Image = global::DemoContagio.UI.Properties.Resources._40px_certificado;
             this.btnCarreras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCarreras.Location = new System.Drawing.Point(22, 181);
+            this.btnCarreras.Location = new System.Drawing.Point(12, 197);
             this.btnCarreras.Name = "btnCarreras";
             this.btnCarreras.Size = new System.Drawing.Size(200, 50);
             this.btnCarreras.TabIndex = 1;
@@ -135,7 +143,7 @@
             this.btnAula.ForeColor = System.Drawing.Color.LightGray;
             this.btnAula.Image = global::DemoContagio.UI.Properties.Resources._40pxpizarra;
             this.btnAula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAula.Location = new System.Drawing.Point(22, 317);
+            this.btnAula.Location = new System.Drawing.Point(12, 333);
             this.btnAula.Name = "btnAula";
             this.btnAula.Size = new System.Drawing.Size(200, 50);
             this.btnAula.TabIndex = 3;
@@ -153,7 +161,7 @@
             this.btnCiclo.ForeColor = System.Drawing.Color.LightGray;
             this.btnCiclo.Image = global::DemoContagio.UI.Properties.Resources._40PXcalendar_icon_129357;
             this.btnCiclo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCiclo.Location = new System.Drawing.Point(22, 249);
+            this.btnCiclo.Location = new System.Drawing.Point(12, 265);
             this.btnCiclo.Name = "btnCiclo";
             this.btnCiclo.Size = new System.Drawing.Size(200, 50);
             this.btnCiclo.TabIndex = 0;
@@ -161,14 +169,6 @@
             this.btnCiclo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCiclo.UseVisualStyleBackColor = false;
             this.btnCiclo.Click += new System.EventHandler(this.btnCiclo_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(240, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(744, 32);
-            this.panel2.TabIndex = 7;
             // 
             // frmMain
             // 

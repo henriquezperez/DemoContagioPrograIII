@@ -124,14 +124,23 @@ namespace DemoContagio.UI
             UpdateCombox();
         }
 
+        public static Image resizeImage(Image imgToResize, Size size)
+        {
+            return (Image)(new Bitmap(imgToResize, size));
+        }
+
         private void btnFoto_Click(object sender, EventArgs e)
         {
             OpenFileDialog foto = new OpenFileDialog();
             foto.Filter = "Imagen JPG|*.jpg";
-            
+            //string path = "C:\\Images\\img1.jpg";
             if (foto.ShowDialog() == DialogResult.OK)
             {
-                pictureBoxFoto.Image = Image.FromFile(foto.FileName);
+                Image img = Image.FromFile(foto.FileName);
+                Bitmap imgbitmap = new Bitmap(img);
+                Image resizedImage = resizeImage(imgbitmap, new Size(120, 120));
+                pictureBoxFoto.Image = resizedImage;
+                //Image.FromFile(foto.FileName)
             }
         }
 

@@ -14,17 +14,7 @@ namespace DemoContagio.UI
 {
     public partial class frmMain : Form
     {
-       /* private static Form _instace;
-
-        public static Form Instance
-        {
-            get
-            {
-                if (_instace == null)
-                    _instace = new Form();
-                return _instace;
-            }
-        }*/
+        
 
         public frmMain()
         {
@@ -46,13 +36,17 @@ namespace DemoContagio.UI
 
         private void btnAsignatura_Click(object sender, EventArgs e)
         {
-            frmAsignatura frm = new frmAsignatura();
-            frm.MdiParent = this;
-            frm.Show();
+            frmAsignatura fr = null;
+            fr = frmAsignatura.Instance;
+            fr.MdiParent = this;
+            this.TopMost = true;
+            fr.Show();
+            
         }
 
         private void btnCarreras_Click(object sender, EventArgs e)
         {
+
             frmCarrera frm = new frmCarrera();
             frm.MdiParent = this;
             frm.Show();
@@ -89,8 +83,5 @@ namespace DemoContagio.UI
                  frm.Show();
              }
          }*/
-
-
     }
-
 }

@@ -207,7 +207,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::DemoContagio.UI.Properties.Resources.graduado1;
+            this.pictureBox1.BackgroundImage = global::DemoContagio.UI.Properties.Resources.certificado__1_;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
