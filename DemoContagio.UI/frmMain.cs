@@ -72,18 +72,25 @@ namespace DemoContagio.UI
             frm.Show();
         }
 
-       /* private void Windows(EventArgs e, int x)
+        private void btnEstudiantes_Click(object sender, EventArgs e)
         {
-            if(e.Equals(btnCiclo.Click() == true), x == 1)
-            {
-                frmCiclo frm = new frmCiclo();
-                _instace = frm;
-                frm.MdiParent = this;
-                frm.Show();
-            }
-        }*/
+            frmEstudiante frm = new frmEstudiante();
+            frm.MdiParent = this;
+            frm.Show();
+        }
 
-       
+        /* private void Windows(EventArgs e, int x)
+         {
+             if(e.Equals(btnCiclo.Click() == true), x == 1)
+             {
+                 frmCiclo frm = new frmCiclo();
+                 _instace = frm;
+                 frm.MdiParent = this;
+                 frm.Show();
+             }
+         }*/
+
+
     }
 
 }

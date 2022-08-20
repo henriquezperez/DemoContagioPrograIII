@@ -14,7 +14,7 @@ namespace DemoContagio.UI
 {
     public partial class frmCarrera : Form
     {
-        List<Carrera> _list;
+        //List<Carrera> _list;
         public frmCarrera()
         {
             InitializeComponent();
@@ -29,14 +29,22 @@ namespace DemoContagio.UI
 
         private void UpdateDataGrid()
         {
-            _list = CarreraBL.Instance.SelectAll();
-            dataGridView1.DataSource = _list;
+            var query = (from a in CarreraBL.Instance.SelectAll()
+                         from b in FacultadBL.Instance.SelectAll()
+                         where a.FacultadId == b.FacultadId
+                         select new
+                         {
+                             ID = a.CarreraId,
+                             Carrera = a.Nombre,
+                             Facultad = b.Nombre
+                         }
+                         ).ToList();
+            dataGridView1.DataSource = query;
         }
 
         private void UpdateCombox()
         {
-            List<Facultad> _list;
-            _list = FacultadBL.Instance.SelectAll();
+            List<Facultad> _list = FacultadBL.Instance.SelectAll();
             comboBoxFacultad.DataSource = _list;
             comboBoxFacultad.DisplayMember = "Nombre";
             comboBoxFacultad.ValueMember = "FacultadId";

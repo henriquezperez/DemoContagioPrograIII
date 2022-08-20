@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEstudiantes = new System.Windows.Forms.Button();
             this.btnAsignatura = new System.Windows.Forms.Button();
             this.btnFacultad = new System.Windows.Forms.Button();
             this.btnCarreras = new System.Windows.Forms.Button();
             this.btnAula = new System.Windows.Forms.Button();
             this.btnCiclo = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnEstudiantes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 561);
             this.panel1.TabIndex = 5;
+            // 
+            // btnEstudiantes
+            // 
+            this.btnEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.btnEstudiantes.FlatAppearance.BorderSize = 0;
+            this.btnEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstudiantes.ForeColor = System.Drawing.Color.LightGray;
+            this.btnEstudiantes.Image = global::DemoContagio.UI.Properties.Resources._40pxgraduado;
+            this.btnEstudiantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstudiantes.Location = new System.Drawing.Point(22, 452);
+            this.btnEstudiantes.Name = "btnEstudiantes";
+            this.btnEstudiantes.Size = new System.Drawing.Size(200, 50);
+            this.btnEstudiantes.TabIndex = 5;
+            this.btnEstudiantes.Text = "Estudiantes";
+            this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEstudiantes.UseVisualStyleBackColor = false;
+            this.btnEstudiantes.Click += new System.EventHandler(this.btnEstudiantes_Click);
             // 
             // btnAsignatura
             // 
@@ -151,23 +169,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(744, 32);
             this.panel2.TabIndex = 7;
-            // 
-            // btnEstudiantes
-            // 
-            this.btnEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
-            this.btnEstudiantes.FlatAppearance.BorderSize = 0;
-            this.btnEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstudiantes.ForeColor = System.Drawing.Color.LightGray;
-            this.btnEstudiantes.Image = global::DemoContagio.UI.Properties.Resources._40pxgraduado;
-            this.btnEstudiantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstudiantes.Location = new System.Drawing.Point(22, 452);
-            this.btnEstudiantes.Name = "btnEstudiantes";
-            this.btnEstudiantes.Size = new System.Drawing.Size(200, 50);
-            this.btnEstudiantes.TabIndex = 5;
-            this.btnEstudiantes.Text = "Estudiantes";
-            this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEstudiantes.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 

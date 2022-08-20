@@ -45,6 +45,7 @@
     <Compile Include="AulaBL.cs" />
     <Compile Include="CarreraBL.cs" />
     <Compile Include="CicloBL.cs" />
+    <Compile Include="EstudianteBL.cs" />
     <Compile Include="FacultadBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

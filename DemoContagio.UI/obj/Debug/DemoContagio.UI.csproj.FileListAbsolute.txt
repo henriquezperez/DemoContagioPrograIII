@@ -22,3 +22,4 @@ E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\obj\Debug\DemoContagio.
 E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\obj\Debug\DemoContagio.UI.csproj.CopyComplete
 E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\obj\Debug\DemoContagio.UI.exe
 E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\obj\Debug\DemoContagio.UI.pdb
+E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\obj\Debug\DemoContagio.UI.frmEstudiante.resources

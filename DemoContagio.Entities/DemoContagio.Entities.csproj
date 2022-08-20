@@ -45,6 +45,7 @@
     <Compile Include="Aula.cs" />
     <Compile Include="Carrera.cs" />
     <Compile Include="Ciclo.cs" />
+    <Compile Include="Estudiante.cs" />
     <Compile Include="Facultad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -63,7 +63,8 @@ CREATE PROC sp_AsignaturaInsert
 	@FacultadId int
 AS 
 BEGIN
-	INSERT INTO Asignatura(Nombre, Codigo, AulaId, CicloId, FacultadId) VALUES (@Nombre, @Codigo, @AulaId, @CicloId, @FacultadId)
+	INSERT INTO Asignatura(Nombre, Codigo, AulaId, CicloId, FacultadId)
+	VALUES (@Nombre, @Codigo, @AulaId, @CicloId, @FacultadId)
 END
 GO
 
@@ -81,3 +82,44 @@ BEGIN
 	INSERT INTO Facultad(Nombre) VALUES (@Nombre)
 END
 GO
+
+CREATE PROC sp_EstudianteSelectAll
+AS
+BEGIN
+	SELECT * FROM Estudiante
+END
+GO
+
+CREATE PROC sp_EstudianteInsert
+	@Nombres text,
+	@Apellidos text,
+	@Codigo text,
+	@CarreraId int,
+	@NumTelefono text,
+	@Genero text,
+	@Natalicio text,
+	@EstadoId int
+AS 
+BEGIN
+	INSERT INTO Estudiante(Nombres, Apellidos, Codigo, CarreraId, NumTelefono, Genero, Natalicio, EstadoId)
+	VALUES (@Nombres, @Apellidos, @Codigo, @CarreraId, @NumTelefono, @Genero, @Natalicio, @EstadoId)
+END
+GO
+/*
+CREATE PROC sp_EstudianteInsert
+	@Nombres text,
+	@Apellidos text,
+	@Codigo text,
+	@CarreraId int,
+	@NumTelefono text,
+	@Genero text,
+	@Natalicio text,
+	@EstadoId int,
+	@Foto Image
+AS 
+BEGIN
+	INSERT INTO Estudiante(Nombres, Apellidos, Codigo, CarreraId, NumTelefono, Genero, Natalicio, EstadoId, Foto)
+	VALUES (@Nombres, @Apellidos, @Codigo, @CarreraId, @NumTelefono, @Genero, @Natalicio, @EstadoId, @Foto)
+END
+GO
+*/

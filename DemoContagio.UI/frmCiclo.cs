@@ -69,7 +69,7 @@ namespace DemoContagio.UI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if(textBoxName.Text != string.Empty || textBoxYear.Text != string.Empty)
+            if(textBoxName.Text != string.Empty && textBoxYear.Text != string.Empty)
             {
                 Ciclo entity = new Ciclo()
                 {

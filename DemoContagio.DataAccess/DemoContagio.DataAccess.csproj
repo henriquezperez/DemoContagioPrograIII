@@ -47,6 +47,7 @@
     <Compile Include="CarreraDAL.cs" />
     <Compile Include="CicloDAL.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="EstudianteDAL.cs" />
     <Compile Include="FacultadDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
