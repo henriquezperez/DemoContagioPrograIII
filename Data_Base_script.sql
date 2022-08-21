@@ -56,7 +56,7 @@ CREATE TABLE Estudiante(
 	Genero text not null,
 	Natalicio text not null,
 	EstadoId int foreign key (EstadoId) references Estado(EstadoId) not null,
-	--Foto image
+	Foto image not null
 )
 
 CREATE TABLE Inscripcion(
