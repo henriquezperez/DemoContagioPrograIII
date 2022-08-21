@@ -130,6 +130,9 @@
   <data name="40PXsombrero-de-graduacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\40PXsombrero-de-graduacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="certificado (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\certificado (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="educacion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\educacion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,6 +141,9 @@
   </data>
   <data name="40PXcalendar_icon_129357" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\40PXcalendar_icon_129357.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sombrero-de-graduacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sombrero-de-graduacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="64pxeducacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\64pxeducacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,16 +163,13 @@
   <data name="40px-certificado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\40px-certificado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sombrero-de-graduacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sombrero-de-graduacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="calendar_icon_129357" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar_icon_129357.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="photoNull" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\photoNull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="certificado (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\certificado (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eliminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

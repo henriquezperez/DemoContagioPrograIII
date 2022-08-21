@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnEstudiantes = new System.Windows.Forms.Button();
-            this.btnAsignatura = new System.Windows.Forms.Button();
-            this.btnFacultad = new System.Windows.Forms.Button();
             this.btnCarreras = new System.Windows.Forms.Button();
             this.btnAula = new System.Windows.Forms.Button();
+            this.btnAsignatura = new System.Windows.Forms.Button();
             this.btnCiclo = new System.Windows.Forms.Button();
+            this.btnFacultad = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,20 +50,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 561);
+            this.panel1.Size = new System.Drawing.Size(204, 561);
             this.panel1.TabIndex = 5;
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(220, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(764, 32);
-            this.panel2.TabIndex = 7;
             // 
             // btnEstudiantes
             // 
             this.btnEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.btnEstudiantes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstudiantes.FlatAppearance.BorderSize = 0;
             this.btnEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -72,53 +65,17 @@
             this.btnEstudiantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEstudiantes.Location = new System.Drawing.Point(12, 468);
             this.btnEstudiantes.Name = "btnEstudiantes";
-            this.btnEstudiantes.Size = new System.Drawing.Size(200, 50);
+            this.btnEstudiantes.Size = new System.Drawing.Size(182, 50);
             this.btnEstudiantes.TabIndex = 5;
             this.btnEstudiantes.Text = "Estudiantes";
             this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEstudiantes.UseVisualStyleBackColor = false;
             this.btnEstudiantes.Click += new System.EventHandler(this.btnEstudiantes_Click);
             // 
-            // btnAsignatura
-            // 
-            this.btnAsignatura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
-            this.btnAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAsignatura.FlatAppearance.BorderSize = 0;
-            this.btnAsignatura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAsignatura.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAsignatura.Image = global::DemoContagio.UI.Properties.Resources._40pxçeducacion___copia;
-            this.btnAsignatura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsignatura.Location = new System.Drawing.Point(12, 129);
-            this.btnAsignatura.Name = "btnAsignatura";
-            this.btnAsignatura.Size = new System.Drawing.Size(200, 50);
-            this.btnAsignatura.TabIndex = 2;
-            this.btnAsignatura.Text = "Asignaturas";
-            this.btnAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAsignatura.UseVisualStyleBackColor = false;
-            this.btnAsignatura.Click += new System.EventHandler(this.btnAsignatura_Click);
-            // 
-            // btnFacultad
-            // 
-            this.btnFacultad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
-            this.btnFacultad.FlatAppearance.BorderSize = 0;
-            this.btnFacultad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacultad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFacultad.ForeColor = System.Drawing.Color.LightGray;
-            this.btnFacultad.Image = global::DemoContagio.UI.Properties.Resources._40PXsombrero_de_graduacion;
-            this.btnFacultad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacultad.Location = new System.Drawing.Point(12, 401);
-            this.btnFacultad.Name = "btnFacultad";
-            this.btnFacultad.Size = new System.Drawing.Size(200, 50);
-            this.btnFacultad.TabIndex = 4;
-            this.btnFacultad.Text = "Facultades";
-            this.btnFacultad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFacultad.UseVisualStyleBackColor = false;
-            this.btnFacultad.Click += new System.EventHandler(this.btnFacultad_Click);
-            // 
             // btnCarreras
             // 
             this.btnCarreras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.btnCarreras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarreras.FlatAppearance.BorderSize = 0;
             this.btnCarreras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarreras.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -127,7 +84,7 @@
             this.btnCarreras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCarreras.Location = new System.Drawing.Point(12, 197);
             this.btnCarreras.Name = "btnCarreras";
-            this.btnCarreras.Size = new System.Drawing.Size(200, 50);
+            this.btnCarreras.Size = new System.Drawing.Size(182, 50);
             this.btnCarreras.TabIndex = 1;
             this.btnCarreras.Text = "Carreras";
             this.btnCarreras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -137,6 +94,7 @@
             // btnAula
             // 
             this.btnAula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.btnAula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAula.FlatAppearance.BorderSize = 0;
             this.btnAula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAula.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,16 +103,37 @@
             this.btnAula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAula.Location = new System.Drawing.Point(12, 333);
             this.btnAula.Name = "btnAula";
-            this.btnAula.Size = new System.Drawing.Size(200, 50);
+            this.btnAula.Size = new System.Drawing.Size(182, 50);
             this.btnAula.TabIndex = 3;
             this.btnAula.Text = "Aulas";
             this.btnAula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAula.UseVisualStyleBackColor = false;
             this.btnAula.Click += new System.EventHandler(this.btnAula_Click);
             // 
+            // btnAsignatura
+            // 
+            this.btnAsignatura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.btnAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAsignatura.FlatAppearance.BorderSize = 0;
+            this.btnAsignatura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsignatura.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAsignatura.Image = global::DemoContagio.UI.Properties.Resources._40pxçeducacion___copia;
+            this.btnAsignatura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsignatura.Location = new System.Drawing.Point(12, 129);
+            this.btnAsignatura.Name = "btnAsignatura";
+            this.btnAsignatura.Size = new System.Drawing.Size(182, 50);
+            this.btnAsignatura.TabIndex = 2;
+            this.btnAsignatura.Text = "Asignaturas";
+            this.btnAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAsignatura.UseVisualStyleBackColor = false;
+            this.btnAsignatura.Click += new System.EventHandler(this.btnAsignatura_Click);
+            // 
             // btnCiclo
             // 
             this.btnCiclo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.btnCiclo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCiclo.FlatAppearance.BorderSize = 0;
             this.btnCiclo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCiclo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,12 +142,39 @@
             this.btnCiclo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCiclo.Location = new System.Drawing.Point(12, 265);
             this.btnCiclo.Name = "btnCiclo";
-            this.btnCiclo.Size = new System.Drawing.Size(200, 50);
+            this.btnCiclo.Size = new System.Drawing.Size(182, 50);
             this.btnCiclo.TabIndex = 0;
             this.btnCiclo.Text = "Ciclo";
             this.btnCiclo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCiclo.UseVisualStyleBackColor = false;
             this.btnCiclo.Click += new System.EventHandler(this.btnCiclo_Click);
+            // 
+            // btnFacultad
+            // 
+            this.btnFacultad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.btnFacultad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFacultad.FlatAppearance.BorderSize = 0;
+            this.btnFacultad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacultad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacultad.ForeColor = System.Drawing.Color.LightGray;
+            this.btnFacultad.Image = global::DemoContagio.UI.Properties.Resources._40PXsombrero_de_graduacion;
+            this.btnFacultad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFacultad.Location = new System.Drawing.Point(12, 401);
+            this.btnFacultad.Name = "btnFacultad";
+            this.btnFacultad.Size = new System.Drawing.Size(182, 50);
+            this.btnFacultad.TabIndex = 4;
+            this.btnFacultad.Text = "Facultades";
+            this.btnFacultad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFacultad.UseVisualStyleBackColor = false;
+            this.btnFacultad.Click += new System.EventHandler(this.btnFacultad_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(204, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(780, 32);
+            this.panel2.TabIndex = 7;
             // 
             // frmMain
             // 

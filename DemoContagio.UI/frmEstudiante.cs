@@ -75,6 +75,7 @@ namespace DemoContagio.UI
             btnSave.Visible = true;
             btnCancel.Visible = true;
             btnFoto.Visible = true;
+            //btnEliminarFoto.Visible = true;
             btnNew.Enabled = false;
         }
 
@@ -99,6 +100,7 @@ namespace DemoContagio.UI
             btnSave.Visible = false;
             btnCancel.Visible = false;
             btnFoto.Visible = false;
+            btnEliminarFoto.Visible = false;
             btnNew.Enabled = true;
         }
 
@@ -162,6 +164,11 @@ namespace DemoContagio.UI
                 pictureBoxFoto.Image = resizedImage;
                 //Image.FromFile(foto.FileName)
             }
+            if(pictureBox1.Image != Properties.Resources.photoNull)
+            {
+                btnFoto.Text = "Cambiar";
+                btnEliminarFoto.Visible = true;
+            }
         }
 
         private void textBoxApellidos_TextChanged(object sender, EventArgs e)
@@ -174,6 +181,13 @@ namespace DemoContagio.UI
                }
             
             textBoxCodigo.Text = aul + DateTime.Now.ToShortDateString().ToString();
+        }
+
+        private void btnEliminarFoto_Click(object sender, EventArgs e)
+        {
+            pictureBoxFoto.Image = Properties.Resources.photoNull;
+            btnEliminarFoto.Visible = false;
+            btnFoto.Text = "Buscar foto";
         }
     }
 }
