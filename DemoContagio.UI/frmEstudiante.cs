@@ -17,6 +17,8 @@ namespace DemoContagio.UI
     {
         List<Estudiante> _listaEstudiante;
         List<Carrera> _listCarrera;
+        //List<Estado> _listEstados;
+
         public frmEstudiante()
         {
             InitializeComponent();
@@ -31,8 +33,26 @@ namespace DemoContagio.UI
 
         private void UpdateDataGrid()
         {
-            _listaEstudiante = EstudianteBL.Instance.SelectAll();
-            dataGridView1.DataSource = _listaEstudiante;
+            // _listaEstudiante = EstudianteBL.Instance.SelectAll();
+            //dataGridView1.DataSource = _listaEstudiante;
+            var query = (from a in _listaEstudiante = EstudianteBL.Instance.SelectAll()
+                         from b in _listCarrera = CarreraBL.Instance.SelectAll()
+                         where a.CarreraId == b.CarreraId
+                         select new
+                         {
+                             ID = a.CarreraId,
+                             Codigo = a.Codigo,
+                             Nombres = a.Nombres,
+                             Apellidos = a.Apellidos,
+                             Carrera = b.Nombre,
+                             Nacimineto = a.Natalicio,
+                             Genero = a.Genero,
+                             Telefono = a.NumTelefono,
+                             Estado = a.EstadoId,
+                             Foto = a.Foto
+                         }
+                         ).ToList();
+            dataGridView1.DataSource = query;
         }
 
         private void UpdateCombox()
