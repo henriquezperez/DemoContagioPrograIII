@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Collections;
 
 namespace DemoContagio.UI
 {
@@ -68,7 +69,8 @@ namespace DemoContagio.UI
             textBoxNombres.Enabled = true;
             textBoxApellidos.Enabled = true;
             textBoxCodigo.Enabled = true;
-            textBoxNacimiento.Enabled = true;
+            //textBoxNacimiento.Enabled = true;
+            dateTimePickerNacimiento.Enabled = true;
             textBoxTelefono.Enabled = true;
             comboBoxCarrera.Enabled = true;
             comboBoxGenero.Enabled = true;
@@ -81,10 +83,11 @@ namespace DemoContagio.UI
 
         private void ControlsDisable()
         {
-            textBoxNombres.Text = " ";
-            textBoxApellidos.Text = " ";
+            textBoxNombres.Text = "";
+            textBoxApellidos.Text = "";
             textBoxCodigo.Text = "";
-            textBoxNacimiento.Text = "";
+            //textBoxNacimiento.Text = "";
+            dateTimePickerNacimiento.Value = DateTime.Now.Date;
             textBoxTelefono.Text = "";
             comboBoxCarrera.SelectedValue = 1;
             comboBoxGenero.Text = "M";
@@ -93,7 +96,8 @@ namespace DemoContagio.UI
             textBoxNombres.Enabled = false;
             textBoxApellidos.Enabled = false;
             textBoxCodigo.Enabled = false;
-            textBoxNacimiento.Enabled = false;
+            //textBoxNacimiento.Enabled = false;
+            dateTimePickerNacimiento.Enabled = false;
             textBoxTelefono.Enabled = false;
             comboBoxCarrera.Enabled = false;
             comboBoxGenero.Enabled = false;
@@ -124,7 +128,8 @@ namespace DemoContagio.UI
                 CarreraId = (int)comboBoxCarrera.SelectedValue,
                 NumTelefono = textBoxTelefono.Text.Trim(),
                 Genero = comboBoxGenero.Text.Trim(),
-                Natalicio = textBoxNacimiento.Text.Trim(),
+                //Natalicio = textBoxNacimiento.Text.Trim(),
+                Natalicio = dateTimePickerNacimiento.Value.ToLongDateString(),
                 EstadoId = 1,
                 Foto = ms.GetBuffer()
             };
@@ -164,14 +169,28 @@ namespace DemoContagio.UI
 
         private void textBoxApellidos_TextChanged(object sender, EventArgs e)
         {
-            string aul = " ", b;
-           
-                if (textBoxApellidos.Text == " ")
-                {
-                    aul = textBoxApellidos.Text.First().ToString().ToLower().ToString();
-               }
+            /* ArrayList _lista = new ArrayList();
+             int c = 0;
+             for (int i = 0; i < textBoxApellidos.Text.Length; i++)
+             {
+                 if (textBoxApellidos.Text[i].ToString() == " ")
+                 {
+                     // textBoxCodigo.Text += textBoxApellidos.Text[i+1].ToString();  
+                     //c++;
+                     //_lista.Add(i);
+                     //textBoxCodigo.Text += i.ToString();
+                     textBoxCodigo.Text += textBoxApellidos.Text.Split(" ".ToCharArray());
+                 }
+             }
+             //textBoxCodigo.Text = c.ToString();
+             //textBoxCodigo.Text = _lista.ToString();
+
+             */
+            // textBoxCodigo.Text += textBoxApellidos.Text.Split(" ".ToCharArray());
+                
+               // textBoxCodigo.Text = textBoxApellidos.Text.Substring(0, 1).Trim();
             
-            textBoxCodigo.Text = aul + DateTime.Now.ToShortDateString().ToString();
+            
         }
 
         private void btnEliminarFoto_Click(object sender, EventArgs e)
