@@ -69,8 +69,8 @@ namespace DemoContagio.UI
         private void btnEstudiantes_Click(object sender, EventArgs e)
         {
             frmEstudiante frm = new frmEstudiante();
-            frm.MdiParent = this;
-            frm.Show();
+            frm.MdiParent = this.MdiParent;
+            frm.ShowDialog();
         }
 
         /* private void Windows(EventArgs e, int x)

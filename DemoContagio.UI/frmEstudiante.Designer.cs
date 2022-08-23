@@ -32,10 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelControls = new System.Windows.Forms.Panel();
+            this.btnEliminarFoto = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.btnFoto = new System.Windows.Forms.Button();
+            this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
             this.textBoxNombres = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,21 +54,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxCarrera = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnEliminarFoto = new System.Windows.Forms.Button();
-            this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelControls.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -84,7 +84,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
@@ -111,6 +111,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(596, 40);
             this.panel2.TabIndex = 8;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackgroundImage = global::DemoContagio.UI.Properties.Resources.blancoUpdate;
+            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUpdate.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Location = new System.Drawing.Point(556, 0);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(40, 40);
+            this.btnUpdate.TabIndex = 0;
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // panel1
             // 
@@ -151,6 +165,20 @@
             this.panelControls.Size = new System.Drawing.Size(238, 522);
             this.panelControls.TabIndex = 9;
             // 
+            // btnEliminarFoto
+            // 
+            this.btnEliminarFoto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarFoto.FlatAppearance.BorderSize = 0;
+            this.btnEliminarFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarFoto.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarFoto.Image = global::DemoContagio.UI.Properties.Resources.eliminar;
+            this.btnEliminarFoto.Location = new System.Drawing.Point(120, 88);
+            this.btnEliminarFoto.Name = "btnEliminarFoto";
+            this.btnEliminarFoto.Size = new System.Drawing.Size(32, 32);
+            this.btnEliminarFoto.TabIndex = 0;
+            this.btnEliminarFoto.UseVisualStyleBackColor = true;
+            this.btnEliminarFoto.Click += new System.EventHandler(this.btnEliminarFoto_Click);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -173,6 +201,18 @@
             this.btnFoto.Text = "Buscar foto";
             this.btnFoto.UseVisualStyleBackColor = true;
             this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
+            // 
+            // pictureBoxFoto
+            // 
+            this.pictureBoxFoto.BackgroundImage = global::DemoContagio.UI.Properties.Resources.photoNull;
+            this.pictureBoxFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFoto.Location = new System.Drawing.Point(14, 34);
+            this.pictureBoxFoto.Name = "pictureBoxFoto";
+            this.pictureBoxFoto.Size = new System.Drawing.Size(100, 100);
+            this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxFoto.TabIndex = 21;
+            this.pictureBoxFoto.TabStop = false;
             // 
             // textBoxNombres
             // 
@@ -346,6 +386,16 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Estudiante";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::DemoContagio.UI.Properties.Resources.graduado1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(18, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(61, 61);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.btnCancel);
@@ -395,56 +445,6 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackgroundImage = global::DemoContagio.UI.Properties.Resources.blancoUpdate;
-            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpdate.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(550, 0);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(46, 40);
-            this.btnUpdate.TabIndex = 0;
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnEliminarFoto
-            // 
-            this.btnEliminarFoto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarFoto.FlatAppearance.BorderSize = 0;
-            this.btnEliminarFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarFoto.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarFoto.Image = global::DemoContagio.UI.Properties.Resources.eliminar;
-            this.btnEliminarFoto.Location = new System.Drawing.Point(120, 88);
-            this.btnEliminarFoto.Name = "btnEliminarFoto";
-            this.btnEliminarFoto.Size = new System.Drawing.Size(32, 32);
-            this.btnEliminarFoto.TabIndex = 0;
-            this.btnEliminarFoto.UseVisualStyleBackColor = true;
-            this.btnEliminarFoto.Click += new System.EventHandler(this.btnEliminarFoto_Click);
-            // 
-            // pictureBoxFoto
-            // 
-            this.pictureBoxFoto.BackgroundImage = global::DemoContagio.UI.Properties.Resources.photoNull;
-            this.pictureBoxFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxFoto.Location = new System.Drawing.Point(14, 34);
-            this.pictureBoxFoto.Name = "pictureBoxFoto";
-            this.pictureBoxFoto.Size = new System.Drawing.Size(100, 100);
-            this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxFoto.TabIndex = 21;
-            this.pictureBoxFoto.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::DemoContagio.UI.Properties.Resources.graduado1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(61, 61);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,6 +453,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(850, 700);
             this.Name = "frmEstudiante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEstudiante";
@@ -464,9 +465,9 @@
             this.panel1.PerformLayout();
             this.panelControls.ResumeLayout(false);
             this.panelControls.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
