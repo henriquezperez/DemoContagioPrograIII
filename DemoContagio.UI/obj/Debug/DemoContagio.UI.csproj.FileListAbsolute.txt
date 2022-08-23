@@ -7,7 +7,6 @@ E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\bin\Debug\DemoContagio.
 E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\bin\Debug\DemoContagio.BusinessLogic.pdb
 E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\bin\Debug\DemoContagio.Entities.pdb
 E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\bin\Debug\DemoContagio.DataAccess.pdb
-E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\bin\Debug\DemoContagio.DataAccess.dll.config
 E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\obj\Debug\DemoContagio.UI.csproj.AssemblyReference.cache
 E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\obj\Debug\DemoContagio.UI.csproj.SuggestedBindingRedirects.cache
 E:\Biblioteca\Escritorio\gg\DemoContagio\DemoContagio.UI\obj\Debug\DemoContagio.UI.frmAsignatura.resources

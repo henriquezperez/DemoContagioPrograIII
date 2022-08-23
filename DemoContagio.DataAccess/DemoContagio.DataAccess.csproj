@@ -52,9 +52,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DemoContagio.Entities\DemoContagio.Entities.csproj">
       <Project>{57f36e16-f6c1-40a8-a2c6-228ce937adf8}</Project>
       <Name>DemoContagio.Entities</Name>

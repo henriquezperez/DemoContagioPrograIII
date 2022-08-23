@@ -39,7 +39,7 @@ namespace DemoContagio.UI
             frmAsignatura fr = null;
             fr = frmAsignatura.Instance;
             fr.MdiParent = this;
-            this.TopMost = true;
+            //this.TopMost = true;
             fr.Show();
             
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnEstudiantes = new System.Windows.Forms.Button();
             this.btnCarreras = new System.Windows.Forms.Button();
@@ -44,8 +45,8 @@
             this.panel1.Controls.Add(this.btnEstudiantes);
             this.panel1.Controls.Add(this.btnCarreras);
             this.panel1.Controls.Add(this.btnAula);
-            this.panel1.Controls.Add(this.btnAsignatura);
             this.panel1.Controls.Add(this.btnCiclo);
+            this.panel1.Controls.Add(this.btnAsignatura);
             this.panel1.Controls.Add(this.btnFacultad);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -58,6 +59,7 @@
             this.btnEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
             this.btnEstudiantes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstudiantes.FlatAppearance.BorderSize = 0;
+            this.btnEstudiantes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
             this.btnEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstudiantes.ForeColor = System.Drawing.Color.LightGray;
@@ -65,7 +67,7 @@
             this.btnEstudiantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEstudiantes.Location = new System.Drawing.Point(12, 468);
             this.btnEstudiantes.Name = "btnEstudiantes";
-            this.btnEstudiantes.Size = new System.Drawing.Size(182, 50);
+            this.btnEstudiantes.Size = new System.Drawing.Size(180, 50);
             this.btnEstudiantes.TabIndex = 5;
             this.btnEstudiantes.Text = "Estudiantes";
             this.btnEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -77,14 +79,15 @@
             this.btnCarreras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
             this.btnCarreras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarreras.FlatAppearance.BorderSize = 0;
+            this.btnCarreras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
             this.btnCarreras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarreras.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarreras.ForeColor = System.Drawing.Color.LightGray;
             this.btnCarreras.Image = global::DemoContagio.UI.Properties.Resources._40px_certificado;
             this.btnCarreras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCarreras.Location = new System.Drawing.Point(12, 197);
+            this.btnCarreras.Location = new System.Drawing.Point(12, 208);
             this.btnCarreras.Name = "btnCarreras";
-            this.btnCarreras.Size = new System.Drawing.Size(182, 50);
+            this.btnCarreras.Size = new System.Drawing.Size(180, 50);
             this.btnCarreras.TabIndex = 1;
             this.btnCarreras.Text = "Carreras";
             this.btnCarreras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -96,14 +99,15 @@
             this.btnAula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
             this.btnAula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAula.FlatAppearance.BorderSize = 0;
+            this.btnAula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
             this.btnAula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAula.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAula.ForeColor = System.Drawing.Color.LightGray;
             this.btnAula.Image = global::DemoContagio.UI.Properties.Resources._40pxpizarra;
             this.btnAula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAula.Location = new System.Drawing.Point(12, 333);
+            this.btnAula.Location = new System.Drawing.Point(12, 403);
             this.btnAula.Name = "btnAula";
-            this.btnAula.Size = new System.Drawing.Size(182, 50);
+            this.btnAula.Size = new System.Drawing.Size(180, 50);
             this.btnAula.TabIndex = 3;
             this.btnAula.Text = "Aulas";
             this.btnAula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -116,14 +120,15 @@
             this.btnAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAsignatura.FlatAppearance.BorderSize = 0;
+            this.btnAsignatura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
             this.btnAsignatura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsignatura.ForeColor = System.Drawing.Color.LightGray;
             this.btnAsignatura.Image = global::DemoContagio.UI.Properties.Resources._40pxçeducacion___copia;
             this.btnAsignatura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsignatura.Location = new System.Drawing.Point(12, 129);
+            this.btnAsignatura.Location = new System.Drawing.Point(12, 273);
             this.btnAsignatura.Name = "btnAsignatura";
-            this.btnAsignatura.Size = new System.Drawing.Size(182, 50);
+            this.btnAsignatura.Size = new System.Drawing.Size(180, 50);
             this.btnAsignatura.TabIndex = 2;
             this.btnAsignatura.Text = "Asignaturas";
             this.btnAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,14 +140,15 @@
             this.btnCiclo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
             this.btnCiclo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCiclo.FlatAppearance.BorderSize = 0;
+            this.btnCiclo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
             this.btnCiclo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCiclo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCiclo.ForeColor = System.Drawing.Color.LightGray;
             this.btnCiclo.Image = global::DemoContagio.UI.Properties.Resources._40PXcalendar_icon_129357;
             this.btnCiclo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCiclo.Location = new System.Drawing.Point(12, 265);
+            this.btnCiclo.Location = new System.Drawing.Point(12, 338);
             this.btnCiclo.Name = "btnCiclo";
-            this.btnCiclo.Size = new System.Drawing.Size(182, 50);
+            this.btnCiclo.Size = new System.Drawing.Size(180, 50);
             this.btnCiclo.TabIndex = 0;
             this.btnCiclo.Text = "Ciclo";
             this.btnCiclo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -154,14 +160,15 @@
             this.btnFacultad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
             this.btnFacultad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFacultad.FlatAppearance.BorderSize = 0;
+            this.btnFacultad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
             this.btnFacultad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacultad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacultad.ForeColor = System.Drawing.Color.LightGray;
             this.btnFacultad.Image = global::DemoContagio.UI.Properties.Resources._40PXsombrero_de_graduacion;
             this.btnFacultad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacultad.Location = new System.Drawing.Point(12, 401);
+            this.btnFacultad.Location = new System.Drawing.Point(12, 143);
             this.btnFacultad.Name = "btnFacultad";
-            this.btnFacultad.Size = new System.Drawing.Size(182, 50);
+            this.btnFacultad.Size = new System.Drawing.Size(180, 50);
             this.btnFacultad.TabIndex = 4;
             this.btnFacultad.Text = "Facultades";
             this.btnFacultad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -184,10 +191,12 @@
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.MinimumSize = new System.Drawing.Size(1000, 600);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMain";
+            this.Text = "Principal";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

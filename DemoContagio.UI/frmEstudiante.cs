@@ -88,6 +88,7 @@ namespace DemoContagio.UI
             textBoxTelefono.Text = "";
             comboBoxCarrera.SelectedValue = 1;
             comboBoxGenero.Text = "M";
+            btnFoto.Text = "Buscar foto";
             pictureBoxFoto.Image = Properties.Resources.photoNull;
 
             textBoxNombres.Enabled = false;
