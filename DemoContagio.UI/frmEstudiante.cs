@@ -90,7 +90,6 @@ namespace DemoContagio.UI
             comboBoxGenero.Text = "M";
             btnFoto.Text = "Buscar foto";
             pictureBoxFoto.Image = Properties.Resources.photoNull;
-
             textBoxNombres.Enabled = false;
             textBoxApellidos.Enabled = false;
             textBoxCodigo.Enabled = false;
@@ -117,7 +116,6 @@ namespace DemoContagio.UI
             {
                 pictureBoxFoto.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
             }
-            
             Estudiante entity = new Estudiante()
             {
                 Nombres = textBoxNombres.Text.Trim(),
@@ -147,23 +145,15 @@ namespace DemoContagio.UI
             UpdateCombox();
         }
 
-        public static Image resizeImage(Image imgToResize, Size size)
-        {
-            return (Image)(new Bitmap(imgToResize, size));
-        }
-
         private void btnFoto_Click(object sender, EventArgs e)
         {
             OpenFileDialog foto = new OpenFileDialog();
             foto.Filter = "Imagen JPG|*.jpg";
-            //string path = "C:\\Images\\img1.jpg";
             if (foto.ShowDialog() == DialogResult.OK)
             {
                 Image img = Image.FromFile(foto.FileName);
-                Bitmap imgbitmap = new Bitmap(img);
-                Image resizedImage = resizeImage(imgbitmap, new Size(120, 120));
-                pictureBoxFoto.Image = resizedImage;
-                //Image.FromFile(foto.FileName)
+                Bitmap newResolution = new Bitmap(img, new Size(120,120));
+                pictureBoxFoto.Image = newResolution;
             }
             if(pictureBox1.Image != Properties.Resources.photoNull)
             {
