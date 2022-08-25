@@ -41,7 +41,7 @@ namespace DemoContagio.UI
                          where a.CarreraId == b.CarreraId
                          select new
                          {
-                             ID = a.CarreraId,
+                             ID = a.EstudianteId,
                              Codigo = a.Codigo,
                              Nombres = a.Nombres,
                              Apellidos = a.Apellidos,
